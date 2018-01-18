@@ -196,7 +196,18 @@ public class RemoteSession {
 					plugin.getLogger().info("Player [" + args[0] + "] not found.");
 					send("Fail");
 				}
-			// entity.getListName
+			// world.controlPlayer
+			} else if (c.equals("world.controlPlayer")) {
+				Player p = plugin.getNamedPlayer(args[0]);;
+				if (p != null) {
+					attachedPlayer = p;
+					send(args[0] + " under control")
+				} else {
+					plugin.getLogger().info("Player [" + args[0] + "] not found.");
+					send("Fail");
+				}
+
+				// entity.getListName
 			} else if (c.equals("entity.getName")) {
 				Entity e = plugin.getEntity(Integer.parseInt(args[0]));
 				if (e == null) {

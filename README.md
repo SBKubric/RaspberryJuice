@@ -1,4 +1,4 @@
-# RaspberryJuice
+# RaspberryJuice with implementation of control of other players on server
 
 A Bukkit plugin which implements the Minecraft Pi Socket API.
 
@@ -41,6 +41,7 @@ A Bukkit plugin which implements the Minecraft Pi Socket API.
  - spawnEntity(x,y,z,entity) - creates an entity and returns its entity id. see entity.py for list.
  - getEntityTypes - returns all the entities supported by the server.
  - entity.getName(id) - get a player name for entity id. Reverse of getPlayerId(playerName)
+ - world.controlPlayer(name) - switch control to player 'name'
 
 Note - extra features are NOT guaranteed to be maintained in future releases, particularly if updates are made to the original Pi API which replace the functionality
 
@@ -94,3 +95,4 @@ mvn package
  - [opticyclic](https://github.com/opticyclic)
  - [timcu](https://www.triptera.com.au/wordpress/)
  - [pxai](https://github.com/pxai)
+ - [sbkubric](https://github.com/sbkubric
